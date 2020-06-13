@@ -1,4 +1,6 @@
-int partition(vector<int> &v, int start, int endd)
+class Solution {
+public:
+    int partition(vector<int> &v, int start, int endd)
     {
         int pivot = v[endd];
         int pIndex = start;
@@ -27,3 +29,4 @@ int partition(vector<int> &v, int start, int endd)
         int n = nums.size();
         qSort(nums,0,n-1);
     }
+};

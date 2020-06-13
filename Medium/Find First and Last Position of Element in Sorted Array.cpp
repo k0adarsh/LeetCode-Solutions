@@ -1,4 +1,6 @@
- vector<int> searchRange(vector<int>& v, int x) {
+class Solution {
+public:
+    vector<int> searchRange(vector<int>& v, int x) {
 
         int low = 0,high = v.size()-1,mid;
         vector<int> ans;
@@ -34,3 +36,4 @@
 
         return ans;
     }
+};

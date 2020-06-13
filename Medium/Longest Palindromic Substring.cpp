@@ -1,4 +1,6 @@
-bool isPalindrome(string s)
+class Solution {
+public:
+    bool isPalindrome(string s)
     {
         int n = s.length(),i;
         for(i=0;i<n/2;i++)
@@ -62,3 +64,4 @@ bool isPalindrome(string s)
         }
         return res;
     }
+};

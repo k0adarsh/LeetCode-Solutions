@@ -1,4 +1,6 @@
-int change(int t, vector<int>& v) {
+class Solution {
+public:
+    int change(int t, vector<int>& v) {
 
         int n = v.size(),i,j;
         int dp[n+1][t+1];
@@ -21,7 +23,9 @@ int change(int t, vector<int>& v) {
                     else
                         dp[i][j] = dp[i-1][j] + dp[i][j-v[i-1]];
                 }
+               // cout<<dp[i][j]<<" ";
             }
+            //cout<<endl;
         }
         return dp[n][t];
     }

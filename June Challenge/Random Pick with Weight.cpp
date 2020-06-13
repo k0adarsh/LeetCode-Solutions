@@ -1,4 +1,6 @@
-vector<int> w;
+class Solution {
+public:
+    vector<int> w;
     int sum;
 
     Solution(vector<int>& v) {
@@ -28,3 +30,10 @@ vector<int> w;
         }
         return low;
     }
+};
+
+/**
+ * Your Solution object will be instantiated and called as such:
+ * Solution* obj = new Solution(w);
+ * int param_1 = obj->pickIndex();
+ */

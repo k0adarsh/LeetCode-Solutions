@@ -1,4 +1,6 @@
-bool isPowerOfTwo(int n) {
+class Solution {
+public:
+    bool isPowerOfTwo(int n) {
         int r,q;
         while(n)
         {
@@ -13,3 +15,4 @@ bool isPowerOfTwo(int n) {
         }
         return false;
     }
+};

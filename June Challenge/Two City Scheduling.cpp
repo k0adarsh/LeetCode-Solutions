@@ -1,4 +1,6 @@
-int twoCitySchedCost(vector<vector<int>>& costs) {
+class Solution {
+public:
+    int twoCitySchedCost(vector<vector<int>>& costs) {
 
         int n = costs.size(),i,ans=0;
         vector<int> difArr;
@@ -14,3 +16,4 @@ int twoCitySchedCost(vector<vector<int>>& costs) {
             ans += difArr[i];
         return ans;
     }
+};

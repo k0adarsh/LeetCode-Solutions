@@ -1,4 +1,6 @@
-bool checkSub(string s, string t, int i, int j)
+class Solution {
+public:
+    bool checkSub(string s, string t, int i, int j)
     {
         if(j==t.length())
         {
@@ -14,3 +16,4 @@ bool checkSub(string s, string t, int i, int j)
 
        return checkSub(s,t,0,0);
     }
+};

@@ -1,4 +1,6 @@
-int searchInsert(vector<int>& v, int t) {
+class Solution {
+public:
+    int searchInsert(vector<int>& v, int t) {
 
         int n = v.size();
         int low=0,high=n-1,mid;
@@ -14,3 +16,4 @@ int searchInsert(vector<int>& v, int t) {
         }
         return low;
     }
+};

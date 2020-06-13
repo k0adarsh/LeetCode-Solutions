@@ -1,4 +1,17 @@
- ListNode* addList(ListNode* ptr1,ListNode *ptr2, int carry)
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+
+    ListNode* addList(ListNode* ptr1,ListNode *ptr2, int carry)
     {
         int summ = 0;
         if(ptr1)
@@ -33,3 +46,4 @@
 
         return addList(l1,l2,0);
     }
+};

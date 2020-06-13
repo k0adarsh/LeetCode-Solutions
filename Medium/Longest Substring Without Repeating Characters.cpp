@@ -1,4 +1,6 @@
-int lengthOfLongestSubstring(string s) {
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
 
         int i=0,j=0,ans=1,n=s.length(),len;
         if(n==0)
@@ -22,3 +24,4 @@ int lengthOfLongestSubstring(string s) {
         }
         return ans;
     }
+};
